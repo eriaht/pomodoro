@@ -1,0 +1,32 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (min-width: 1200px) {
+  .divider {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .line {
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+  .divider {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .line {
+    transform: rotate(90deg);
+  }
+}

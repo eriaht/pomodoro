@@ -1,0 +1,21 @@
+.app {
+  display: grid;
+  height: 100vh;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45px 1fr 20px 1.4fr;
+}
+
+@media only screen and (min-width: 1200px) {
+  .app {
+    grid-template-columns: 1fr 40px 1.4fr;
+    grid-template-rows: 45px 1fr;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 450px) {
+  .app {
+    grid-template-columns: 1fr 40px 1.4fr;
+    grid-template-rows: 45px 1fr;
+  }
+}

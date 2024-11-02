@@ -1,0 +1,70 @@
+.timers {
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  position: relative;
+
+  overflow-y: hidden;
+}
+
+.timersHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+  padding: 10px 15px;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  padding: 0 15px; */
+}
+
+.timersHeader p {
+  font-size: 18px;
+}
+
+.newTimerBtn {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  box-shadow: 2.5px 5px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.4s;
+}
+
+.newTimerBtn svg path {
+  stroke-width: 1.5;
+}
+
+.newTimerBtn:hover {
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media only screen and (min-width: 1200px) {
+  .timers {
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+  .timers {
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}

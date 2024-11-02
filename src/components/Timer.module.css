@@ -1,0 +1,34 @@
+.timer h2 {
+  font-size: 100px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+  .timer h2 {
+    font-size: 130px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .timer h2 {
+    font-size: 180px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .timer h2 {
+    font-size: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .timer h2 {
+    font-size: 250px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 450px) {
+  .timer h2 {
+    font-size: 100px;
+  }
+}

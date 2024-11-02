@@ -1,0 +1,4 @@
+custom hooks
+useReducer 
+- reducer function
+Context API

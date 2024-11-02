@@ -1,0 +1,80 @@
+.stopWatch {
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  margin-top: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.stopWatch p {
+  font-size: 18px;
+  padding: 5px 0px 0px 15px;
+}
+
+.stopWatchButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  transition: all 0.4s;
+}
+.stopWatchButton:hover {
+  transform: translateY(2px);
+}
+
+.stopWatchButton button {
+  transition: all 0.4s;
+}
+
+.stopWatchButton button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media only screen and (min-width: 400px) {
+  .stopWatchButton button {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .stopWatchButton button {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .stopWatch {
+    margin: 0;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
+
+  .stopWatchButton button {
+    font-size: 50px;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+  .stopWatch {
+    margin: 0;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
+
+  .stopWatchButton button {
+    font-size: 25px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

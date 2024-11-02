@@ -1,0 +1,71 @@
+.timersListItem {
+  font-weight: bold;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.timersListItem:hover {
+  transition: background-color 0.4s;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.timersButton {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: solid 1px #000;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timersListItem:hover .timersButton {
+  transform: translateY(-3px);
+}
+
+@media only screen and (min-width: 1200px) {
+  .timersButton {
+    transform: rotate(90deg);
+  }
+
+  .timersListItem:hover .timersButton {
+    transform: translateX(3px) translateY(0) rotate(90deg);
+  }
+
+  .timersListItem {
+    font-size: 26px;
+    font-weight: normal;
+  }
+
+  .timersButton {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 450px) and (max-width: 700px) {
+  .timersButton {
+    transform: rotate(90deg);
+  }
+
+  .timersListItem:hover .timersButton {
+    transform: translateX(3px) translateY(0) rotate(90deg);
+  }
+
+  .timersListItem {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .timersButton {
+    height: 14px;
+    width: 14px;
+  }
+}
